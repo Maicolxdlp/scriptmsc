@@ -1001,7 +1001,7 @@ else
 	echo -e "\033[1;31m[\033[1;36m1\033[1;31m] \033[1;33mUDP"
 	echo -e "\033[1;31m[\033[1;36m2\033[1;31m] \033[1;33mTCP (\033[1;32mRecomendado\033[1;33m)"
 	echo ""
-	read -p "$(echo -e "\033[1;32mQUE PROTOCOLO DESEA UTILIZAR EN OPENVPN : \033[1;37m")" -e -i 2 resp
+	read -p "$(echo -e "\033[1;32mPROTOCOLO PARA UTILIZAR : \033[1;37m")" -e -i 2 resp
 	if [[ "$resp" = '1' ]]; then
 		PROTOCOL=udp
 	elif [[ "$resp" = '2' ]]; then
