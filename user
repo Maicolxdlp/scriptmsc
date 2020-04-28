@@ -53,7 +53,7 @@ source user
 exit
 ;;
 7)
-source usercodes 7
+source banner.sh
 echo -ne "${cor[5]}"
 read -p " ${txt[47]}"
 cd /etc/adm-lite
