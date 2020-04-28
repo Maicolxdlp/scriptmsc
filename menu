@@ -1,0 +1,78 @@
+#!/bin/bash
+source menu-txt
+echo -ne "${cor[2]}"
+read -p " ${txt[9]} " _selecao
+case $_selecao in
+0)
+clear
+echo -e "${cor[0]}"
+exit
+;;
+1)
+clear
+source user
+exit
+;;
+2)
+source ferramentas
+;;
+3)
+source usercodes 5
+echo -ne "${cor[5]}"
+read -p " ${txt[47]}"
+cd /etc/adm-lite
+source menu
+exit
+;;
+4)
+minhas_portas
+echo -ne "${cor[5]}"
+read -p " ${txt[47]}"
+cd /etc/adm-lite
+source menu
+exit
+;;
+5)
+bash /etc/adm-lite/instalar_wep
+;;
+6)
+funcao_verificacao > /dev/null 2>&1
+source menu
+exit
+;;
+7)
+if [[ -e /etc/bash.bashrc-bakup ]]; then
+mv -f /etc/bash.bashrc-bakup /etc/bash.bashrc
+cat /etc/bash.bashrc | grep -v "/bin/adm" > /tmp/bash
+mv -f /tmp/bash /etc/bash.bashrc
+echo -e "${cor[1]} =================================== ${cor[0]}"
+echo -e "${cor[2]} \033[1;32mEliminado con Exito!"
+echo -e "${cor[1]} =================================== ${cor[0]}"
+elif [[ -e /etc/bash.bashrc ]]; then
+cat /etc/bash.bashrc|grep -v /bin/adm > /etc/bash.bashrc.2
+echo '/bin/adm' >> /etc/bash.bashrc.2
+cp /etc/bash.bashrc /etc/bash.bashrc-bakup
+mv -f /etc/bash.bashrc.2 /etc/bash.bashrc
+echo -e "${cor[1]} =================================== ${cor[0]}"
+echo -e "${cor[2]} \033[1;32mAUTO INICIO INICIADO!"
+echo -e "${cor[1]} =================================== ${cor[0]}"
+fi
+sleep 2s
+source menu
+exit
+;;
+8)
+$value > /dev/null 2>&1
+chmod +x /etc/adm-lite/*
+[[ -e /etc/adm-lite/idioma_menuinst ]] && idioma=$(cat /etc/adm-lite/idioma_menuinst|head -1) || idioma="pt"
+value=$(vary_rex "2f6574632f61646d2d6c6974652f6d656e755f696e7374")
+${value} ${idioma}
+;;
+9)
+remover_adm
+exit
+;;
+*)
+source menu
+;;
+esac
