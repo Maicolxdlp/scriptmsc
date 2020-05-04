@@ -33,7 +33,10 @@ source menu
 exit
 ;;
 5)
-bash /etc/adm-lite/instalar_wep
+clear
+source infouser.sh
+echo -ne "\n\033[1;31mENTER \033[1;33mpara retornar al \033[1;32mMENU!\033[0m"; read
+msc
 ;;
 6)
 funcao_verificacao > /dev/null 2>&1
