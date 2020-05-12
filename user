@@ -15,10 +15,8 @@ source user
 exit
 ;;
 2)
-source usercodes 2
-echo -ne "${cor[5]}"
-read -p " ${txt[47]}"
-cd /etc/adm-lite
+source remover.sh
+echo -ne "\n\033[1;31mENTER \033[1;33mpara retornar al \033[1;32mMENU!\033[0m"; read
 source user
 exit
 ;;
