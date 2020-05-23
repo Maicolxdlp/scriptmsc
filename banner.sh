@@ -2,8 +2,8 @@
 clear
 chk=$(cat /etc/ssh/sshd_config | grep Banner)
 [[ $(netstat -nltp|grep 'dropbear' | wc -l) != '0' ]] && {
-    local="/etc/dropbear/bannerssh"
-	[[ $(grep -wc $local /etc/default/dropbear) = '0' ]] && echo 'DROPBEAR_BANNER="/etc/dropbear/bannerssh"' >>  /etc/default/dropbear
+    local="/etc/bannerssh"
+	[[ $(grep -wc $local /etc/default/dropbear) = '0' ]] && echo 'DROPBEAR_BANNER="/etc/bannerssh"' >>  /etc/default/dropbear
 }
 [[ "$(echo "$chk" | grep -v '#Banner' | grep Banner)" != "" ]] && {
 	local=$(echo "$chk" |grep -v "#Banner" | grep Banner | awk '{print $2}')
