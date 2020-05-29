@@ -61,7 +61,7 @@ wget https://raw.githubusercontent.com/Maicolxdlp/scriptmsc/modulo/menu.sh -O /b
 chmod +x /bin/menu
 wget https://raw.githubusercontent.com/Maicolxdlp/scriptmsc/modulo/mudardata.sh -O /bin/mudardata > /dev/null 2>&1
 chmod +x /bin/mudardata
-wget https://github.com/Maicolxdlp/scriptmsc/blob/modulo/otimizar.sh -O /bin/otimizar > /dev/null 2>&1
+wget https://raw.githubusercontent.com/Maicolxdlp/scriptmsc/modulo/otimizar.sh -O /bin/otimizar > /dev/null 2>&1
 chmod +x /bin/otimizar
 wget https://raw.githubusercontent.com/Maicolxdlp/scriptmsc/modulo/reiniciarservicos.sh -O /bin/reiniciarservicos > /dev/null 2>&1
 chmod +x /bin/reiniciarservicos
