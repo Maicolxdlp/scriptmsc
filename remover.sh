@@ -21,14 +21,14 @@ database="/root/usuarios.db"
 clear
 tput setaf 7 ; tput setab 4 ; tput bold ; printf '%32s%s%-13s\n' "Eliminar Usuário SSH" ; tput sgr0
 echo ""
-echo -e "\033[1;31m[\033[1;36m1\033[1;31m]\033[1;33m REMOVER UN USUARIO"
-echo -e "\033[1;31m[\033[1;36m2\033[1;31m]\033[1;33m REMOVER TODO LOS USUARIOS"
+echo -e "\033[1;31m[\033[1;36m1\033[1;31m]\033[1;33m ELIMINAR UN USUARIO"
+echo -e "\033[1;31m[\033[1;36m2\033[1;31m]\033[1;33m ELIMINAR TODO LOS USUARIOS"
 echo -e "\033[1;31m[\033[1;36m3\033[1;31m]\033[1;33m VOLVER"
 echo ""
 read -p "$(echo -e "\033[1;32mQUE DESEA HACER\033[1;31m ?\033[1;37m : ")" -e -i 1 resp
 if [[ "$resp" = "1" ]]; then
 clear
-tput setaf 7 ; tput setab 4 ; tput bold ; printf '%32s%s%-13s\n' "Remover Usuário SSH" ; tput sgr0
+tput setaf 7 ; tput setab 4 ; tput bold ; printf '%32s%s%-13s\n' "Eliminar Usuário SSH" ; tput sgr0
 echo ""
 echo -e "\033[1;33mLISTA DE USUARIOS: \033[0m"
 echo""
@@ -57,7 +57,7 @@ else
 		echo ""
 		pkill -f "$user" > /dev/null 2>&1
 		deluser --force $user > /dev/null 2>&1
-		echo -e "\E[41;1;37m Usuario $user removido con éxito! \E[0m"
+		echo -e "\E[41;1;37m Usuario $user eliminado con éxito! \E[0m"
 		grep -v ^$user[[:space:]] /root/usuarios.db > /tmp/ph ; cat /tmp/ph > /root/usuarios.db
 		rm /etc/SSHPlus/senha/$user 1>/dev/null 2>/dev/null
 		if [[ -e /etc/openvpn/server.conf ]]; then
@@ -69,7 +69,7 @@ else
 		if [[ `grep -c $user /tmp/rem` -eq 0 ]]; then
 			deluser --force $user > /dev/null 2>&1
 			echo ""
-			echo -e "\E[41;1;37m Usuario $user removido con éxito! \E[0m"
+			echo -e "\E[41;1;37m Usuario $user eliminado con éxito! \E[0m"
 			grep -v ^$user[[:space:]] /root/usuarios.db > /tmp/ph ; cat /tmp/ph > /root/usuarios.db
 			rm /etc/SSHPlus/senha/$user 1>/dev/null 2>/dev/null
 			if [[ -e /etc/openvpn/server.conf ]]; then
