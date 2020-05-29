@@ -29,7 +29,7 @@ tput cnorm
 echo -e "\E[44;1;37m                OPTIMIZAR Servidor                \E[0m"
 echo ""
 #
-echo -e "\033[1;32m               Atualizando pacotes\033[0m"
+echo -e "\033[1;32m               Atualizando paquetes\033[0m"
 echo ""
 fun_bar 'apt-get update -y' 'apt-get upgrade -y'
 echo ""
