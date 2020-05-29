@@ -35,7 +35,7 @@ do
     fi
 done
 }
-echo -e "\E[44;1;37m Usuario         Status       Conexiones    Tempo   \E[0m"
+echo -e "\E[44;1;37m Usuario         Status       Conexiones    Tiempo   \E[0m"
 echo ""
 echo ""
  while read usline
