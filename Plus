@@ -129,7 +129,7 @@ fun_bar "source list"
 rm Plus* > /dev/null 2>&1
 rm list* > /dev/null 2>&1
 echo "/bin/menu" > /bin/m && chmod +x /bin/m > /dev/null 2>&1
-echo "/bin/msc" > /bin/m && chmod +x /bin/m > /dev/null 2>&1
+echo "cd /bin && bash ./menu" > /bin/msc && chmod +x /bin/msc
 clear
 echo ""
 cd $HOME
