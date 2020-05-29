@@ -43,7 +43,7 @@ wget https://raw.githubusercontent.com/Maicolxdlp/scriptmsc/modulo/criarteste.sh
 chmod +x /bin/criarteste
 wget https://raw.githubusercontent.com/Maicolxdlp/scriptmsc/modulo/criarusuario.sh -O /bin/criarusuario > /dev/null 2>&1
 chmod +x /bin/criarusuario
-wget https://raw.githubusercontent.com/AAAAAEXQOSyIpN2JZ0ehUQ/SSHPLUS-MANAGER-FREE/master/Modulos/delhost.sh -O /bin/delhost > /dev/null 2>&1
+wget https://raw.githubusercontent.com/Maicolxdlp/scriptmsc/modulo/delhost.sh -O /bin/delhost > /dev/null 2>&1
 chmod +x /bin/delhost
 wget https://raw.githubusercontent.com/Maicolxdlp/scriptmsc/modulo/delscript.sh -O /bin/delscript > /dev/null 2>&1
 chmod +x /bin/delscript
