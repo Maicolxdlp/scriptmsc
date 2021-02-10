@@ -245,7 +245,7 @@ case "$x" in
    ;;
    24)
    clear
-   delscript
+   menu2
    ;;
    0|0)
    menu
