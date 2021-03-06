@@ -1658,8 +1658,7 @@ case $x in
 	fun_sslh
 	;;
 	8|08)
-	source tcptweaker.sh
-        exit
+	source tcptweaker
         ;;
 	0|00)
 	menu
