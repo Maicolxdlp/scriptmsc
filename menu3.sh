@@ -1,9 +1,9 @@
 #!/bin/bash
 [[ $1 != "" ]] && id="$1" || id="es"
+clear
 barra="\033[0;34m =================================== \033[1;37m"
 _cores="./cores"
 _dr="./idioma"
-[[ "$(echo ${txt[0]})" = "" ]] && source idioma_geral
 
 #LISTA PORTAS
 mportas () {
@@ -1218,7 +1218,7 @@ unset ddos
 [[ -e /etc/webmin/miniserv.conf ]] && webminn="\033[1;32m ("Online")"
 [[ -e /usr/local/ddos/ddos.conf ]] && ddos="\033[1;32m ("Online")"
 echo -e "$barra"
-echo -e "${cor[5]} ${txt[335]}"
+echo -e "${cor[5]} MENU EXTRA MSC"
 echo -e "$barra"
 echo -e "${cor[2]} [1] □ ${cor[3]}SQUID $squid"
 echo -e "${cor[2]} [2] □ ${cor[3]}DROPBEAR $dropbear"
