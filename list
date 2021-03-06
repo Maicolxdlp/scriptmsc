@@ -59,8 +59,8 @@ wget https://raw.githubusercontent.com/Maicolxdlp/scriptmsc/modulo/limiter.sh -O
 chmod +x /bin/limiter
 wget https://raw.githubusercontent.com/Maicolxdlp/scriptmsc/modulo/menu.sh -O /bin/menu > /dev/null 2>&1
 chmod +x /bin/menu
-wget https://raw.githubusercontent.com/Maicolxdlp/scriptmsc/modulo/menu2.sh -O /bin/menu2 > /dev/null 2>&1 
-chmod +x /bin/menu2
+wget https://raw.githubusercontent.com/Maicolxdlp/scriptmsc/modulo/menu3.sh -O /bin/menu3 > /dev/null 2>&1 
+chmod +x /bin/menu3
 wget https://raw.githubusercontent.com/Maicolxdlp/scriptmsc/modulo/mudardata.sh -O /bin/mudardata > /dev/null 2>&1
 chmod +x /bin/mudardata
 wget https://raw.githubusercontent.com/Maicolxdlp/scriptmsc/modulo/otimizar.sh -O /bin/otimizar > /dev/null 2>&1
