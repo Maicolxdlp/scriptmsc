@@ -1626,7 +1626,8 @@ echo -e "\033[1;31m[\033[1;36m01\033[1;31m] \033[1;37m• \033[1;33mOPENSSH $sts
 [\033[1;36m05\033[1;31m] \033[1;37m• \033[1;33mPROXY SOCKS $sts4\033[1;31m
 [\033[1;36m06\033[1;31m] \033[1;37m• \033[1;33mSSL TUNNEL $sts3\033[1;31m
 [\033[1;36m07\033[1;31m] \033[1;37m• \033[1;33mSSLH MULTIPLEX $sts7\033[1;31m
-[\033[1;36m08\033[1;31m] \033[1;37m• \033[1;33mAUMENTAR VELOCIDAD TCP\033[1;32m◉+\033[1;31m
+[\033[1;36m08\033[1;31m] \033[1;37m• \033[1;33mINSTALAR V2RAY\033[1;32m+\033[1;31m
+[\033[1;36m09\033[1;31m] \033[1;37m• \033[1;33mMENU V2RAY\033[1;32m\033[1;31m
 [\033[1;36m00\033[1;31m] \033[1;37m• \033[1;33mVOVER \033[1;32m< \033[0m"
 echo ""
 echo -e "\033[0;34m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
@@ -1658,8 +1659,14 @@ case $x in
 	fun_sslh
 	;;
 	8|08)
-	source tcptweaker
+	wget https://raw.githubusercontent.com/Maicolxdlp/scriptmsc/modulo/install-v2ray.sh -O install-v2ray.sh && bash install-v2ray.sh
         ;;
+	9|09) 
+	v2ray
+	
+	
+	
+	
 	0|00)
 	menu
 	;;
