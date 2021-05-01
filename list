@@ -37,7 +37,7 @@ wget https://raw.githubusercontent.com/Maicolxdlp/scriptmsc/modulo/blockt.sh -O 
 chmod +x /bin/blockt
 wget https://raw.githubusercontent.com/AAAAAEXQOSyIpN2JZ0ehUQ/SSHPLUS-MANAGER-FREE/master/Modulos/botssh.sh -O /bin/botssh > /dev/null 2>&1
 chmod +x /bin/botssh
-wget https://raw.githubusercontent.com/AAAAAEXQOSyIpN2JZ0ehUQ/SSHPLUS-MANAGER-FREE/master/Modulos/conexao -O /bin/conexao > /dev/null 2>&1
+wget wget https://raw.githubusercontent.com/Maicolxdlp/scriptmsc/modulo/conexao.sh -O /bin/conexao > /dev/null 2>&1
 chmod +x /bin/conexao
 wget https://raw.githubusercontent.com/Maicolxdlp/scriptmsc/modulo/criarteste.sh -O /bin/criarteste > /dev/null 2>&1
 chmod +x /bin/criarteste
